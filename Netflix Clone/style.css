@@ -1,0 +1,407 @@
+*{
+    /* border: 2px solid white; */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    max-width: 100%;
+}
+.padding, section{
+    padding: 30px 150px;
+}
+
+:root{
+    --color-red: rgb(229, 9, 20);
+    --color-grey: rgb(39, 39, 39);
+    --border-radius1: 5px;
+}
+
+.text-1{
+    font-size: 3.1rem;
+    font-weight: 900;
+}
+.text-2{
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+.text-3{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.red-button{
+    color: white;
+    background-color: var(--color-red);
+    border: none;
+    border-radius: var(--border-radius1);
+}
+
+/* Nav */
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    /* border: 2px solid white; */
+
+    background-color: transparent;
+}
+
+nav>div{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 300px);
+    justify-content: space-between;
+
+    background-color: transparent;
+}
+
+nav img{
+    width: clamp(110px, 11vw, 200px);
+    background-color: transparent;
+}
+
+nav>div>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px;
+
+    background-color: transparent;
+}
+
+.Lang-button, .red-button{
+    height: clamp(25px,2.1rem, 35px);
+    padding: 0.4rem 1.1rem;
+}
+
+.Lang-button{
+    width: clamp(70px , 7.5rem, 130px);
+    border-radius: var(--border-radius1);
+    font-size: 0.95rem;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Main */
+
+/* home */
+.home{
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border: 2px solid pink; */
+    background-image: url(Images/background_img.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home, .home .background-image{
+    width: 100%;
+    min-height: 45rem;
+}
+
+.home .background-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.9) 100%);
+    background-color: transparent;
+}
+
+.info{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    padding: clamp(150px , 17.5rem, 280px) clamp(20px, 5rem, 5rem);
+    padding-bottom: 0;
+}
+
+.info div{
+    margin-bottom: clamp(10px, 1.5rem, 30px);
+    background-color: transparent;
+}
+
+.subscribe form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: transparent;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe input{
+    height: 3.4rem;
+} 
+
+.subscribe #email-box{
+    border: 1px solid rgb(159, 159, 159, 0.7);
+    border-radius: var(--border-radius1);
+    box-sizing: border-box;
+    width: clamp(200px, 23rem, 370px);
+    padding: 18px;
+    font-size: 1rem;
+    background-color: rgba(0,0,0,0.55);
+}
+
+.subscribe #email-box::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+
+.break{
+    width: 100%;
+    height: 12px;
+    background-color: rgb(41, 41, 41);
+}
+
+/* sections */
+
+section{
+    min-height: 440px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* align-content: center; */
+}
+
+.section1>div:first-child>div, .section3>div:first-child>div, .section2>div:last-child>div, .section4>div:last-child>div, .section5>div{
+    margin-bottom: clamp(10px, 1.5rem, 30px);
+}
+
+section>div{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+section>div img{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.section1>div video{
+    position: absolute;
+    top: 20%;
+    left: 12.3%;
+
+    width: 74%;
+
+    object-fit: cover;
+    object-position: top left;
+}
+
+.section3>div video{
+    position: absolute;
+    top: 9%;
+    left: 18.4%;
+
+    width: 60%;
+
+    object-fit: cover;
+    object-position: top left;
+}
+
+.download{
+    position: relative;
+    top: -5rem;
+    margin: auto;
+    z-index: 5;
+
+    box-sizing: border-box;
+    padding: 5px;
+    padding-right: clamp(10px, 1rem, 20px);
+    width: clamp(150px, 60%, 400px);
+    max-height: 80px;
+    height: 20%;
+
+    box-shadow: 0 0 2em 0 rgb(86, 111, 157);
+    border: 2px solid grey;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 9px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.download>div{
+    display: flex;
+    gap: 10px;
+}
+
+.download div img{
+    width: 20%;
+    object-fit: cover;
+}
+
+#stranger-things{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    justify-content: center;
+    align-items: start;
+}
+
+/* FAQS */
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box>div{
+    background-color: var(--color-grey);
+    text-align: start;
+
+    padding: 2rem;
+    margin: 10px;
+}
+
+.box p{
+    background-color: transparent;
+    align-content: center;
+    font-size: 1.6rem;
+    font-weight: 400;    
+}
+
+.answer p{
+    margin-bottom: 10px;
+}
+
+.box .ques{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .ques:hover{
+    background-color: rgb(65, 65, 65);
+    /* cursor: pointer; */
+}
+
+.box .answer{
+    visibility: hidden;
+    position: absolute;
+}
+
+.box .ques img{
+    transition: 1s;
+}
+
+.box .ques:hover img{
+    transform: rotate(45deg);
+}
+
+.box .ques:hover + .answer{
+    position: relative;
+    visibility: visible;
+}
+
+/* Footer */
+footer{
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+footer div{
+    grid-column: 1/span 4;
+}
+
+footer .grid-item, footer a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* media queries */
+
+@media screen and (width < 1280px) {
+    .padding, section{
+        padding: 30px 40px;
+    }
+    
+    nav>div{
+        width: calc(100% - 80px);
+    }
+}
+
+@media screen and (width< 960px){
+    *{
+        font-size: 11px;
+    }
+    section{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .section2 , .section4{
+        flex-wrap: wrap-reverse;
+    }
+    .section3>div video{
+        left: 25%;
+        width: 48%;
+        height: 50%;
+    }
+
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer div{
+        grid-column: 1/span 2;
+    }
+
+    .text-1{
+        font-size: 3.3rem;
+        font-weight: 600;
+    }
+    .text-2{
+        font-size: 1.8rem;
+        font-weight: 400;
+    
+    }
+    .text-3{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (width < 600px){
+    *{
+        font-size: 9px;
+    }
+    .section3>div video{
+        left: 18.4%;
+        width: 63%;
+    }
+}
