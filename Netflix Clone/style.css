@@ -95,7 +95,6 @@ nav>div>div{
     position: relative;
     top: 0;
     left: 0;
-    /* border: 2px solid pink; */
     background-image: url(Images/background_img.jpg);
     
     background-size: cover;
